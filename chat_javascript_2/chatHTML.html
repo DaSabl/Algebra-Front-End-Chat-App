@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHAT APLIKACIJA</title>
+    <link rel="stylesheet" href="chatCSS.css" />
+    <script src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+    <script src="chatJAVA.js"></script>
+  </head>
+  <body>
+    <h1 class="zaglavlje">
+      <span class="dioNaslova">CHAT</span>
+      APLIKACIJA
+    </h1>
+
+    <p class="otvaranje" onclick="otvoriFormu()">
+      Let's <span class="dioNaslova">chat</span>
+    </p>
+    <div class="otvoriFormu">
+      <div class="porukeIspis"></div>
+      <form class="forma" onsubmit="slanjeForme(); return false">
+        <input type="text" class="input ime" placeholder="Nadimak..." />
+        <input type="text" class="input poruka" placeholder="Poruka..." />
+        <button type="submit" class="input botun">Pošalji</button>
+      </form>
+      <p class="zatvaranje" onclick="resetiranje()">
+        <b> Vidimo se</b> <span class="dioNaslova"><b>kasnije</b> </span>
+      </p>
+    </div>
+  </body>
+</html>
